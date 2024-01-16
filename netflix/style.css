@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: regular;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: regular;
+    src: url(/asset/SuisseIntl-Regular.ttf);
+}
+@font-face {
+    font-family: font;
+    src: url(/asset/l.ttf);
+}
+@font-face {
+    font-family: font;
+    src: url(/asset/SuisseIntl-Semibold.ttf);
+}
+
+#main{
+    min-width: 100vh;
+    background-color: #232323;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(/asset/IN-en-20240107-trifectadaily-perspective_alpha_website_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+nav .lft-nav img{
+    width: 12vw;
+    margin: .5vh 4vh 0 9vw;
+    
+}
+
+nav .rght-nav{
+    margin: 0 10vw 0 0;
+}
+
+nav .rght-nav a{
+    text-decoration: none;
+    background-color: #C11119;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: #efefef;
+
+}
+
+.text-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    margin-top: 15vw;
+}
+
+.text-box h1{
+    font-family: font;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+.text-box h3{
+    line-height: 11vh;
+}
+
+.text-box p{
+    
+}
+
+.Btn{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 8px;
+    border: 0;
+    outline: 0;
+    margin-top: 4vh;
+
+}
+
+.text-box .Btn .start{
+    border-radius: 5px;
+    background-color: #e11a24;
+    border: none;
+    padding: 16px 35px;
+    color: #fff;
+    font-size: 1.4vw;
+}
+
+.text-box input{
+    background-color: transparent;
+    padding: 13px 22px;
+    width: 20vw;
+    border: 1px solid grey;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.part-1{
+    margin-top: 1vh;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.part-1 .lft{
+    width: 60%;
+    margin-left: 8vw;
+    color: #fff;
+}
+
+.part-1 .lft h1{
+    width: 60%;
+    font-size: 4vw;
+    line-height: 9vh;
+}
+.part-1 .lft p{
+    width: 88%;
+    font-size: 4vh;
+}
+
+.part-1 .rght{
+    width: 40%;
+    position: relative;
+}
+
+.part-1 .rght img{
+    width: 30vw;
+    opacity: 11;
+    z-index: 99;
+    position: sticky;
+}
+
+.part-1 .rght video{
+    position: absolute;
+    width: 19vw;
+    right: 12vw;
+    top: 4vh;
+}
+.part-3 .rght video{
+    position: absolute;
+    width: 22vw;
+    right: 10.5vw;
+    top: 10vh;
+}
+
+.part-4{
+    margin-top: 1vh;
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+}
+
+.part-4 h1{
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-size: 3vw;
+    font-family: font;
+    color: #fff;
+    text-align: center;
+}
+
+.part-4 .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.part-4 .row button i{
+    float: right;
+}
+.part-4 .row button{
+    padding: 20px 22px;
+    width: 70%;
+    text-align: left;
+    border: none;
+    background-color: #414141;
+    color: #fff;
+    margin: 1vh;
+}
+
+.part-4 h3{
+    color: #fff;
+    padding-top: 5vw;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.part-4 .Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5vh;
+    gap: 8px;
+    border: 0;
+    outline: 0;
+
+}
+
+.part-4 .Btn .start{
+    border-radius: 5px;
+    background-color: #e11a24;
+    border: none;
+    padding: 16px 35px;
+    color: #fff;
+    font-size: 1.4vw;
+}
+
+.part-4 input{
+    background-color: transparent;
+    padding: 13px 22px;
+    width: 20vw;
+    border-radius: 5px;
+    border: .5px solid grey;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.footer{
+    margin-top: 1vh;
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+}
+
+.footer h2{
+    color: #fff;
+    padding-left: 15vh;
+    padding-top: 8vh;
+}
+
+
+.footer .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 8vh;
+    margin-left: 7vw;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 480px) {
+    nav .lft-nav img {
+        width: 17vw;
+        margin: 0.5vh 4vh 0 9vw;
+    }
+    nav .rght-nav a {
+        text-decoration: none;
+        background-color: #C11119;
+        padding: 5px 13px;
+        font-size: 2.5vw;
+    }
+
+    .text-box h1 {
+        font-size: 7vw;
+        width: 71%;
+        text-align: center;
+    }
+    .text-box p {
+        width: 70%;
+        text-align: center;
+    }
+    .text-box h3 {
+        line-height: 8vh;
+    }
+
+    .Btn {
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .text-box input {
+        width: 78vw;
+        font-size: 4.2vw;
+    }
+
+    .text-box .Btn .start {
+        border-radius: 5px;
+        padding: 9px 4px 10px 9px;
+        font-size: 5.4vw;
+    }
+
+    .part-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part-1 .lft {
+        margin-top: 10vw;
+        position: relative;
+    }
+    .part-1 .lft h1{
+        width: 100%;
+        font-size: 7vw;
+        line-height: 4vh;
+        text-align: center;
+    }
+
+    .part-1 .lft p {
+        width: 130%;
+        position: absolute;
+        right: -4.6vh;
+        font-size: 3vh;
+        text-align: center;
+        margin-top: 3vh;
+        
+    }
+
+    .part-1 .rght {
+        width: 78%;
+        position: relative;
+        top: 23vw;
+    }
+    .part-1 .rght img {
+        width: 80vw;
+    }
+
+    .part-1 .rght video {
+        width: 53vw;
+    }
+
+    .part-2 .rght {
+        top: 0vw;
+    }
+
+    .part-2 .lft {
+        margin-top: 0vw;
+    }
+
+    .part-4 h3 {
+        color: #fff;
+        padding-top: 13vw;
+        text-align: center;
+        font-size: 4.2vw;
+    }
+
+    .part-4 .Btn {
+        gap: 3vh;
+    }
+
+    .part-4 input {
+        padding: 12px 8px;
+        width: 59vw;
+        font-size: 5.2vw;
+    }
+
+    .part-4 .Btn .start {
+        padding: 9px 5px;
+        font-size: 4.4vw;
+    }
+
+    .footer h2 {
+        color: #fff;
+        padding-left: 4vh;
+        padding-top: 6vh;
+        width: 57%;
+        text-align: center;
+        margin-left: 13vh;
+    }
+
+    .footer .row {
+        margin-left: 6vw;
+    }
+
+
+}
+
+
+@media (max-width: 376px){
+    nav .lft-nav img {
+        width: 33vw;
+        margin: 2.5vh 4vh 0 5vw;
+    }
+
+    nav .rght-nav {
+        margin: 1vh 4vw 0 0;
+    }
+    nav .rght-nav a {
+        text-decoration: none;
+        background-color: #C11119;
+        padding: 8px 18px;
+        font-size: 4.5vw;
+        border-radius: 10px;
+    }
+    .text-box {
+        margin-top: 40vw;
+    }
+
+    .part-1 .lft h1 {
+        width: 100%;
+        font-size: 9vw;
+    }
+    .part-1 .lft p {
+        width: 139%;
+        right: -10.6vh;
+        font-size: 4.5vh;
+        margin-top: 3vh;
+    }
+    .part-1 .rght {
+        top: 34vw;
+    }
+
+    .part-1 .rght img {
+        width: 80vh;
+    }
+
+    .part-1 .rght video {
+        width: 52vh;
+        right: 12vh;
+        top: 5vh;
+    }
+
+    .part-2 .rght {
+        top: 2vw;
+    }
+
+    .part-2 .lft {
+        margin-top: 15vw;
+    }
+
+    .part-3 .rght video {
+        position: absolute;
+        width: 61vh;
+        right: 10.5vw;
+        top: 11vh;
+    }
+}
+
+@media (max-width: 320px){
+    .hero{
+        height: 150vh;
+    }
+
+    .text-box h3 {
+        line-height: 9vh;
+        font-size: 6vh;
+        width: 70%;
+        text-align: center;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .text-box h1 {
+        font-size: 15vw;
+    }
+
+    .text-box {
+        margin-top: 30vw;
+    }
+
+    .text-box p {
+        width: 70%;
+        text-align: center;
+        font-size: 6vh;
+    }
+    .text-box input {
+        width: 100%;
+        font-size: 9.2vw;
+    }
+
+    .Btn{
+        margin-top: 9vh;
+    }
+    
+    .text-box .Btn .start {
+        border-radius: 5px;
+        padding: 9px 4px 10px 9px;
+        font-size: 10.4vw;
+    }
+
+    .part-1 .lft {
+        margin-top: 17vw;
+        position: relative;
+    }
+    .part-1 .lft h1 {
+        width: 100%;
+        font-size: 9vw;
+    }
+
+    .part-1 .lft p {
+        width: 139%;
+        right: -10.6vh;
+        font-size: 4.5vh;
+    }
+
+    .part-1 .rght {
+        top: 53vw;
+    }
+
+    .part-1 .rght img {
+        width: 100%;
+    }
+
+    .part-1 .rght video {
+        position: absolute;
+        width: 50vh;
+        right: 15vh;
+        top: 4vh;
+    }
+
+    .part-2 .rght {
+        top: 5vw;
+    }
+
+    .part-3 .rght video {
+        position: absolute;
+        width: 57vh;
+        right: 11vh;
+        top: 12vh;
+    }
+
+    .part-4 h1 {
+        padding-top: 11vw;
+        padding-bottom: 6vw;
+        font-size: 9vw;
+    }
+
+    .part-4 .row button {
+        padding: 20px 9px;
+        width: 90%;
+        font-size: 4vh;
+    }
+
+    .part-4 h3 {
+        font-size: 8.2vw;
+    }
+
+    .part-4 {
+        margin-top: 1vh;
+        width: 100%;
+        height: 140vh;
+        background-color: black;
+    }
+
+    .part-4 input {
+        padding: 12px 8px;
+        width: 76%;
+        font-size: 8.2vw;
+    }
+
+    .part-4 .Btn .start {
+        padding: 9px 5px;
+        font-size: 7.4vw;
+    }
+
+    .part-4 .Btn {
+        margin-top: 7vh;
+    }
+}
